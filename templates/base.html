@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style_base.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'IMDb.png' %}">
+    {% block extrameta %}
+    {% endblock %}
+    <script src="https://kit.fontawesome.com/b53851d4fb.js" crossorigin="anonymous"></script>
+    <title>IMDb</title>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="{% url 'actors' %}">
+                    <i class="fa-solid fa-user fa-sm fa-fw"></i> Actors
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'movies' %}">
+                    <i class="fa-solid fa-clapperboard fa-fw"></i> Movies
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'add-movie' %}">
+                    <i class="fa-solid fa-square-plus"></i> Add Movie
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Page content -->
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,67 @@
+.actors-container {
+    margin: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 99.2%;
+    height: 500px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.actor-card {
+    width: 300px;
+    height: 350px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.actor-photo {
+    width: 200px;
+    height: 275px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.actor-photo {
+    margin-bottom: 24px;
+    margin-top: 20px;
+    transition-duration: 0.3s;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.50), 0 10px 25px 0 rgba(0, 0, 0, 0.50);
+}
+
+.actor-photo:hover {
+    transform: scale(1.06);
+}
+
+.actor-name {
+    position: relative;
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.actor-name::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    top: 32px;
+    bottom: 0;
+    left: 0;
+    transition: .3s ease-in-out;
+}
+
+.actor-name:hover::before{
+    width: 100%;
+}
+
+.actor-name:link,
+.actor-name:visited,
+.actor-name:active {
+    color: #ffffff;
+}

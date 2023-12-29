@@ -1,0 +1,65 @@
+body {
+    height: 700px;
+}
+
+.actor-details-container {
+    width: 70%;
+    height: 750px;
+    display: flex;
+    justify-content: space-evenly;
+    transform: translate(20%, 7%);
+}
+
+.actor-data {
+    width: 700px;
+    height: 575px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 85px;
+    transform: translateY(2%);
+}
+
+.actor-photo-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.actor-details-photo {
+    width: 400px;
+    height: 550px;
+    object-fit: cover;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.30), 0 10px 25px 0 rgba(0, 0, 0, 0.30);
+}
+
+.actor-name,
+.actor-birthdate,
+.actor-nationality,
+.actor-movies,
+.actor-summary,
+.awarded {
+    margin: 0;
+    font-size: 35px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.actor-name {
+    font-weight: bold;
+}
+
+.actor-movies {
+    margin-bottom: 25px;
+}
+
+.actor-summary {
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.fa-solid.fa-trophy {
+    color: #ffc400;
+}

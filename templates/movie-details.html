@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extrameta %}
+    <!-- CSS for movie details page -->
+    <link rel="stylesheet" href="{% static 'style_movie_details.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="movie-details-container">
+        <div class="movie-image-container">
+            <img class="movie-details-image" src="{{ movie.image }}" alt="">
+        </div>
+        <!-- Movie data -->
+        <div class="movie-data">
+            <div class="movie-title">{{ movie.title }}</div>
+            <div class="movie-genre">{{ movie.genre }}</div>
+            <div class="movie-script">{{ movie.script }}</div>
+            <div class="movie-release-date">Released On: {{ movie.release_date }}</div>
+            <div class="movie-director">Directed By: {{ movie.director }}</div>
+            <div class="movie-protagonist">Starring:
+                <a href="{% url 'actor-details' id=movie.protagonist.id %}">
+                    {{ movie.protagonist }}
+                </a>
+            </div>
+            <div class="movie-duration">Duration: {{ movie.duration }} minutes</div>
+            <!-- Trailer -->
+            <iframe class="movie-trailer"
+                    src="https://www.youtube.com/embed/{{ movie.trailer }}"
+                    allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+{% endblock %}

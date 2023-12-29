@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extrameta %}
+    <link rel="stylesheet" href="{% static 'style_add_movie.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="add-movie-container">
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_div }}
+            <input class="add-movie-button" type="submit" value="Add Movie">
+        </form>
+    </div>
+{% endblock %}

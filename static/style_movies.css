@@ -1,0 +1,83 @@
+h1, h3 {
+    cursor: default;
+}
+
+.movies-container {
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 99.2%;
+    height: 500px;
+    justify-content: center;
+}
+
+.movies {
+    width: 100%;
+    height: 100vh;
+}
+
+.movie-card {
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 325px;
+    height: 500px;
+    border-radius: 15px;
+    background-color: white;
+    text-align: center;
+}
+
+.movie-details {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 49px;
+    width: 125px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #121212;
+    color: white;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.movie-details:hover {
+    background-color: rgb(77, 77, 77);
+    transition: 0.18s;
+    cursor: pointer;
+}
+
+
+.movie-card h1, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.movie-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+    height: 275px;
+    object-fit: fill;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.30), 0 10px 25px 0 rgba(0, 0, 0, 0.30);
+    transition-duration: 0.3s;
+}
+
+.movie-image:hover {
+    transform: scale(1.06);
+}
+
+.movie-actor {
+    margin-bottom: 0;
+}
+
+.movie-director {
+    margin-top: 0;
+}
+
+.movie-title {
+    font-size: 25px;
+    transform: translateY(5%);
+    margin-top: 20px;
+    margin-bottom: 25px;
+}

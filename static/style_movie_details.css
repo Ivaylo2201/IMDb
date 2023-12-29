@@ -1,0 +1,106 @@
+body {
+    height: 700px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.movie-details-container {
+    width: 70%;
+    height: 1350px;
+    display: flex;
+    justify-content: center;
+    transform: translate(20%, 7%);
+}
+
+.movie-image-container {
+    width: 400px;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.movie-details-image {
+    width: 400px;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.30), 0 10px 25px 0 rgba(0, 0, 0, 0.30);
+}
+
+.movie-data {
+    width: 700px;
+    height: 575px;
+    text-align: center;
+    line-height: 50px;
+    margin-left: 50px;
+    margin-top: 22px;
+}
+
+.movie-title,
+.movie-genre,
+.movie-script,
+.movie-release-date,
+.movie-director,
+.movie-protagonist,
+.movie-duration {
+    height: 40px;
+    font-size: 25px;
+    width: 100%;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.movie-title {
+    font-size: 45px;
+}
+
+.movie-genre {
+    font-size: 24px;
+}
+
+.movie-script {
+    height: 325px;
+    font-size: 19px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    width: 80%;
+    transform: translateX(12%);
+}
+
+.movie-protagonist a {
+    position: relative;
+    text-decoration: none;
+}
+
+.movie-protagonist a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    top: 32px;
+    bottom: 0;
+    left: 0;
+    transition: .3s ease-in-out;
+}
+
+.movie-protagonist a:hover::before {
+    width: 100%;
+}
+
+.movie-protagonist a:active,
+.movie-protagonist a:link,
+.movie-protagonist a:visited {
+    color: #ffffff;
+}
+
+.movie-trailer {
+    width: 1024px;
+    height: 576px;
+    border: none;
+    transform: translate(-40%, 25%);
+    margin-bottom: 15px;
+}

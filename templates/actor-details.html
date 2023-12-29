@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extrameta %}
+    <link rel="stylesheet" href="{% static 'style_actor_details.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="actor-details-container">
+        <div class="actor-photo-container">
+            <img class="actor-details-photo" src="{{ actor.photo }}" alt="">
+        </div>
+        <!-- Actor data -->
+        <div class="actor-data">
+            <div class="actor-name">{{ actor.first_name }} {{ actor.last_name }}</div>
+            <div class="actor-birthdate">Birthdate: {{ actor.birth_date }}</div>
+            <div class="actor-nationality">Nationality: {{ actor.nationality }}</div>
+            <div class="actor-summary">{{ actor.summary }}</div>
+
+            {% if movies %}
+                <div class="actor-movies">Stars in: {{ movies }}</div>
+            {% else %}
+                <div class="actor-movies">No movies featuring {{ actor.first_name }} are added yet!</div>
+            {% endif %}
+
+            {% if actor.is_awarded %}
+                <div class="awarded">
+                    Awarded
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+            {% else %}
+                <div class="awarded">
+                    Not awarded yet
+                </div>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}
