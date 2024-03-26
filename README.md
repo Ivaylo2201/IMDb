@@ -7,9 +7,6 @@ Movies tab filled with some data:
 Actors tab filled with some data:
 ![actors](https://github.com/Ivaylo2201/IMDb/assets/120925473/f661dd79-c37d-48e0-b147-b477c21d854c)
 
-Empty Add movie form:
-![add_movie](https://github.com/Ivaylo2201/IMDb/assets/120925473/8c3fd7bf-4150-49a3-906c-08506789a023)
-
 Movie details tab:
 ![movie-details](https://github.com/Ivaylo2201/IMDb/assets/120925473/fabf458f-5006-45a9-aee3-475cbdc0aed1)
 
